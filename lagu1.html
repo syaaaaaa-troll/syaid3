@@ -10,3 +10,35 @@
 <h2>kalo mau lanjut pencet OPEN <small><small></small></h2>
 <h2>ini cuma gabut-gabutan aku doang gess jadi maklumin aja yaaa. <small></h2>
 <h1>@syaid</h1>
+<html>
+  <head>
+    <style>
+      #teks-ketikan {
+        font-family: monospace;
+        font-size: 26px;
+        border-right: 2px solid black;
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="teks-ketikan"></span>
+    <script>
+      const teks = "JANGAN LUPA APA, YAP JANGAN LUPA KALO KITA TEMENAN:(";
+      let i = 0;
+      const speed = 50; // kecepatan ketikan
+
+      function ketikan() {
+        if (i < teks.length) {
+          document.getElementById("teks-ketikan").innerHTML += teks.charAt(i);
+          i++;
+          setTimeout(ketikan, speed);
+        }
+      }
+
+      ketikan();
+    </script>
+  </body>
+</html>
+<h2>mohon maaf gaeess kalo lagu nya dikit soalnya aku malasss</h2>
+
